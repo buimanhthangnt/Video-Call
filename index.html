@@ -1,0 +1,26 @@
+<html>
+<head>
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<title>Realtime Video Call</title>
+</head>
+<body>
+	<h1 style="text-align: center; margin-bottom: 30px; color: #5cb85c; font-weight: 700">icety</h1>
+	<i style="text-align: center; margin-top: -20px; margin-bottom: 10px; display: block">realtime video call</i>
+	<div style="text-align: center; margin-top: 100px" id="room">
+		<div style="display: inline-block; margin: auto">
+			<input type="number" class="form-control" id="number" style="width: 300px" placeholder="Enter a room number">
+			<button onclick="joinRoom()" id="submit" class="btn btn-primary" style="width: 300px; margin-left: 0 !important">Join</button>
+		</div>
+	</div>
+	<div id="screen" style="visibility: hidden; margin-left: 30px">
+		<video id="friendsVideo" autoplay playsinline></video>
+		<video id="yourVideo" autoplay muted playsinline></video>
+		<button onclick="showFriendsFace()" id="call" type="button" class="btn btn-success btn-lg" disabled>
+				<span class="glyphicon glyphicon-facetime-video" aria-hidden="true"></span> Call</button>
+	</div>
+	<br />
+	<script src="/socket.io/socket.io.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,16 @@
+#yourVideo {
+  background-color: #ddd;
+  border-radius: 7px;
+  margin: 10px 0px 0px 10px;
+  width: 20%;
+}
+#friendsVideo {
+  background-color: #ddd;
+  border-radius: 7px;
+  margin: 10px 0px 0px 10px;
+  width: 50%;
+}
+button {
+  margin: 5px 0px 0px 10px !important;
+  width: 50%;
+}
